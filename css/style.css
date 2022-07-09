@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    text-decoration: none;
+}
+:root {
+    --cl-white: #fafafa;
+    --cl-gray-dark: #868585;
+    --bg-blue: #63c7e6;
+    --cl-gray-light: #dbdbdb;
+    --bg-white: #ffffff;
+}
+body {
+    margin: 32px auto;
+    max-width: 935px;
+    padding-bottom: 20px;
+    background-color: var(--cl-white);
+    color: var(--cl-gray-dark);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* SMARTPHONE */
+.smartphone {
+    margin-left: -90px;
+}
+.smartphone .screen {
+    position: absolute;
+    margin: 25px 0 0 160px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}  
+@keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+}
+/* FORM */
+.form-area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 15px;
+}
+.form-area .logo {
+    width: 355px;
+    padding: 40px 30px 0 90px;
+    margin-bottom: 0;
+    background-color: var(--bg-white);
+    border: 1px solid var(--cl-gray-light);
+    border-bottom: 0;
+}
+.form-area .logo img {
+    width: 170px;
+}
+.form-area form {
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    padding: 30px 0 20px 0;
+    align-items: center;
+    background-color: var(--bg-white);
+    border: 1px solid var(--cl-gray-light);
+    border-top: 0;
+}
+.form-area form input {
+    border-radius: 4px;
+    width: 280px;
+}
+.form-area form input[type=email], form input[type=password] {
+    padding: 13px 0 13px 4px;
+    margin-bottom: 5px;
+    border: 1px solid var(--cl-gray-light);
+    background-color: var(--cl-white);
+    font-size: 11px;
+}
+.form-area form input[type=submit] {
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: var(--bg-white);
+    background-color: #8cd6ec;
+    font-weight: 500;
+}
+.form-area form input[type=submit]:hover { 
+    background-color: var(--bg-blue);
+    cursor: pointer;
+}
+form .other-option {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0; 
+    color: var(--cl-gray-dark);
+    font-weight: 700;
+    font-size: 14px;
+}
+form .other-option div {
+    width: 110px;
+    height: 1px;
+    background-color: var(--cl-gray-light);
+    margin: 6px 16px;
+}
+form .options {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+form .options .social{
+    color: #385185;
+    font-size: 16px;
+    font-weight: 700;
+}
+form .options .social:hover { 
+    color: #3f37ad; 
+}
+form .options .forget {
+    margin-top: 22px;
+}
+form .options .forget a {
+    color: var(--cl-gray-dark);
+    font-size: 14px;
+}
+.form-area .noaccount {
+    width: 355px;
+    margin: 10px 0;
+    padding: 22px;
+    text-align: center;
+    background-color: var(--bg-white);
+    border: 1px solid var(--cl-gray-light);
+    font-size: 14px;
+}
+.form-area .noaccount a {
+    color: var(--cl-gray-dark);
+}
+.form-area .noaccount a span {
+    color: var(--bg-blue);
+    font-weight: 700;
+}
+.form-area .apps {
+    text-align: center;
+    width: 355px;
+    margin-top: 10px;
+    color: var(--cl-gray-dark);
+}
+.form-area .apps img {
+    width: 140px;
+    margin-top: 15px;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    margin: 0 10px;
+    font-size: 14px;
+}
+footer a {
+    font-size: 14px;
+    color: var(--cl-gray-dark);
+    margin: 5px 4px;
+}
+footer .footer-content { margin-bottom: 5px; }
+footer .copyright {
+    margin-top: 20px;
+}
+footer .copyright select {
+    background: none;
+    color: var(--cl-gray-dark);
+}
+@media screen and (max-width:840px) {
+    body {
+        max-width: 100%;
+    }
+    .smartphone {
+        margin-left: -50px;
+    }
+}
+@media screen and (max-width:800px) {
+    .smartphone {
+       display: none;
+    }
+    .form-area {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:435px) {
+    .form-area .logo {
+        width: 100%;
+        margin: auto;
+        padding: 10px auto;
+        background-color: transparent;
+        border: none;
+    }
+    .form-area form {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-top: 0;
+    }
+    .form-area .noaccount {
+        width: 100%;
+        margin: 0;
+        background-color: transparent;
+        border: none;
+    }
+}
