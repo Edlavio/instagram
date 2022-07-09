@@ -1,18 +1,20 @@
-# Recriando a interface da página de login do Instagram! 
+# Instagram Login Page Clone
 
-
-![Instagram](https://user-images.githubusercontent.com/79201879/152636639-9d09feed-3e75-4f2a-bf9e-8941a2af3a2f.png)
+<a href="https://edlavio.github.io/Instagram/" align="center"> <h3>Preview 👀</h3> </a>
+<a href="https://edlavio.github.io/Instagram/">
+  <img src="https://user-images.githubusercontent.com/79201879/178122135-d0c92812-7743-4040-8681-190ccbdacdf4.png" alt="Instagram">
+</a>
 
 ## Tecnologias utilizadas🚀:
 
+
 * HTML
 * CSS 
+* JS
 
-## Sobre
+## About 
 
 Este projecto aborda conceito sobre CSS Flexbox e responsividade.
-
-<p>Projecto do bootcamp Web Developer da DIO.
 
 
 
